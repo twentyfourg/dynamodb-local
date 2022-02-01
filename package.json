@@ -1,0 +1,48 @@
+{
+  "name": "dynamodb-local",
+  "version": "1.0.0",
+  "description": "Run DynamoDB locally inside a Docker container.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jakowenko@github.com/twentyfourg/dynamodb-local.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twentyfourg/dynamodb-local/issues"
+  },
+  "homepage": "https://github.com/twentyfourg/dynamodb-local#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "yorkie": "^2.0.0"
+  },
+  "release": {
+    "branches": [
+      "master"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false
+        }
+      ],
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
+  },
+  "gitHooks": {
+    "commit-msg": "npx --no-install commitlint --edit"
+  }
+}
