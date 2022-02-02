@@ -1,3 +1,5 @@
+[![DynamoDB Local](https://flat.badgen.net/github/release/twentyfourg/dynamodb-local/stable)](https://github.com/twentyfourg/dynamodb-local) [![DynamoDB Local](https://flat.badgen.net/github/stars/twentyfourg/dynamodb-local)](https://github.com/twentyfourg/dynamodb-local/stargazers) [![Docker Pulls](https://flat.badgen.net/docker/pulls/twentyfourg/dynamodb-local)](https://hub.docker.com/r/twentyfourg/dynamodb-local)
+
 # DynamoDB Local
 
 Run DynamoDB locally inside a Docker container.
