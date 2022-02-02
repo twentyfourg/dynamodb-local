@@ -32,14 +32,11 @@ One Table
 [
   {
     "TableName": "cache",
-    "KeySchema": [
-      { "AttributeName": "key", "KeyType": "HASH" }
-    ],
-    "AttributeDefinitions": [
-      { "AttributeName": "key", "AttributeType": "S" }
-    ],
+    "KeySchema": [{ "AttributeName": "key", "KeyType": "HASH" }],
+    "AttributeDefinitions": [{ "AttributeName": "key", "AttributeType": "S" }],
     "BillingMode": "PAY_PER_REQUEST"
   }
+]
 ```
 
 Multiple Tables
@@ -54,10 +51,8 @@ Multiple Tables
   },
   {
     "TableName": "rate-limit",
-    "KeySchema": [{ "AttributeName": "rate-limit", "KeyType": "HASH" }],
-    "AttributeDefinitions": [
-      { "AttributeName": "rate-limit", "AttributeType": "S" }
-    ],
+    "KeySchema": [{ "AttributeName": "key", "KeyType": "HASH" }],
+    "AttributeDefinitions": [{ "AttributeName": "key", "AttributeType": "S" }],
     "BillingMode": "PAY_PER_REQUEST"
   }
 ]
